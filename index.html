@@ -94,8 +94,7 @@
     <h3><em>Skills</em></h3>
     <em>Languages</em>: Comfortable in C, Java, Python
     <br />
-    <em>Technologies</em>: Git, Github, VSCode, Unreal Editor, Roblox Studio,
-    Basic Unix
+    <em>Technologies</em>: Git, Github, VSCode, Unreal Editor, Roblox Studio, Adobe Lightroom, Adobe Photoshop
 
     <br />
     <br />
@@ -122,5 +121,25 @@
     (2018, WA, District 10)
 
     <br />
+    <br />
+    <br />
+	
+	
+    <button onclick="sendEmail()" style="font-size: 13px; padding: 5px; font-weight: bold;">Get in Touch</button>
+
+    <script>
+        function sendEmail() {
+            const recipient = 'jacobmmillion@gmail.com';
+            const subject = 'Website Message';
+            const body = '';
+
+            const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            window.location.href = mailtoLink;
+        }
+    </script>
+
+    <br />
+
   </body>
 </html>
