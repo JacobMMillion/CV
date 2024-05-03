@@ -97,6 +97,53 @@
 	      <a href="StudentReviews.html">reviews</a>
 	    </p>
 
+	<h2><em>Interests</em></h2>
+	    I am interested in efficient and impactful solutions to problems. I have
+	    been invloved in various organizations such as <em>Rebuilding Together</em>,
+	    where I assisted in the implementation of home repairs. I have also
+	    participated in groups such as Columbia's<em>
+	      Arete Effective Altruism Fellowship</em
+	    >, a discussion group that explored ideas in Effective Altruism and
+	    actionable ways to improve the world. Main topics consist of cause-areas
+	    such as climate change, nuclear security, and AI safety.
+	    <br />
+	    <br />
+	    I enjoy digital photo editing and have experience with platforms such as
+	    Photoshop and Lightroom. I was the first place contender in my district for
+	    the <em>Congressional Art Competition</em>
+	    in 2018, and my piece, "Together" was displayed in the U.S. Capital for the
+	    duration of the year. More info here:
+	    <a href="https://www.congressionalinstitute.org/art-contest-winners/#"
+	      >House of Representatives Website</a
+	    >
+	    (2018, WA, District 10)
+
+	    <br />
+	    <br />
+
+	    <button
+	      onclick="sendEmail()"
+	      style="font-size: 13px; padding: 5px; font-weight: bold"
+	    >
+	      Get in Touch! Click here to send an email
+	    </button>
+
+	    <script>
+	      function sendEmail() {
+		const recipient = "jacobmmillion@gmail.com";
+		const subject = "Website Message";
+		const body = "";
+
+		const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(
+		  subject
+		)}&body=${encodeURIComponent(body)}`;
+
+		window.location.href = mailtoLink;
+	      }
+	    </script>
+
+	    <br />
+	    <br />
 
 
         </div>
@@ -105,7 +152,7 @@
 	<input type="radio" id="tabProjects" name="mytabs">
         <label for="tabProjects">Projects</label>
         <div class = "tab">
-		  <h2><em>Projects</em></h2>
+            <h2><em>Projects</em></h2>
 	    <b>Menu-ly,<em> IOS Application</em></b>: Menu-ly is an IOS application built with Swift designed to improve restaurant organization and customer satisfaction. Restaurant administration and management can upload their menu descriptions so servers can have easy access to view new dishes, changes, and allergies. Staff can also study with built in review features such as flashcards. Multiple restaurants have reported increased server confidence and knowledge after using Menu-ly. More information <a href="Menuly.html">here</a>
 	    <br />
 	    <br />
@@ -146,63 +193,24 @@
 
 	</div>
 
+	<!-- Papers -->
+	<input type="radio" id="tabProjects" name="mytabs">
+        <label for="tabProjects">Projects</label>
+        <div class = "tab">
+
+	    <h2><em>Papers</em></h2>
+	    <p>Below are various papers I have been involved with, relating to computer science or mathematics.</p>
+	    <button onclick="location.href='Papers/Math_2015__Spring_2024__Capstone_Project.pdf';"><b>Python Determinant Calculation and Runtime</b></button>    
+	    <br />
+	    <button onclick="location.href='Papers/Expository_GraphicsAnd3D.pdf';"><b>3D Visualization Mathematics</b></button>
+	    <br />
+	    <br />
+
+	</div>
+
     </div>
 
 
-        <h2><em>Papers</em></h2>
-    <p>Below are various papers I have been involved with, relating to computer science or mathematics.</p>
-    <button onclick="location.href='Papers/Math_2015__Spring_2024__Capstone_Project.pdf';"><b>Python Determinant Calculation and Runtime</b></button>    
-    <br />
-    <button onclick="location.href='Papers/Expository_GraphicsAnd3D.pdf';"><b>3D Visualization Mathematics</b></button>
-    <br />
-    <br />
 
-    <h2><em>Interests</em></h2>
-    I am interested in efficient and impactful solutions to problems. I have
-    been invloved in various organizations such as <em>Rebuilding Together</em>,
-    where I assisted in the implementation of home repairs. I have also
-    participated in groups such as Columbia's<em>
-      Arete Effective Altruism Fellowship</em
-    >, a discussion group that explored ideas in Effective Altruism and
-    actionable ways to improve the world. Main topics consist of cause-areas
-    such as climate change, nuclear security, and AI safety.
-    <br />
-    <br />
-    I enjoy digital photo editing and have experience with platforms such as
-    Photoshop and Lightroom. I was the first place contender in my district for
-    the <em>Congressional Art Competition</em>
-    in 2018, and my piece, "Together" was displayed in the U.S. Capital for the
-    duration of the year. More info here:
-    <a href="https://www.congressionalinstitute.org/art-contest-winners/#"
-      >House of Representatives Website</a
-    >
-    (2018, WA, District 10)
-
-    <br />
-    <br />
-
-    <button
-      onclick="sendEmail()"
-      style="font-size: 13px; padding: 5px; font-weight: bold"
-    >
-      Get in Touch! Click here to send an email
-    </button>
-
-    <script>
-      function sendEmail() {
-        const recipient = "jacobmmillion@gmail.com";
-        const subject = "Website Message";
-        const body = "";
-
-        const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(
-          subject
-        )}&body=${encodeURIComponent(body)}`;
-
-        window.location.href = mailtoLink;
-      }
-    </script>
-
-    <br />
-    <br />
-  </body>
+</body>
 </html>
