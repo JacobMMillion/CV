@@ -3,7 +3,7 @@ body {
 .mytabs {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 900px;
+	max-width: 990px;
 	margin: 50px auto;
 	padding: 25px;
 }
@@ -13,12 +13,14 @@ body {
 .mytabs label {
 	padding: 25px;
 	font-weight: bold;
+	background-color: #e2e2e2;
 }
 .mytabs .tab {
 	width: 100%;
 	padding: 20px;
 	order: 1;
-	display: none;
+	display: none;a
+	background-color: #fff;
 }
 .mytabs input[type="radio"]:checked + label + .tab {
 	display: block;
