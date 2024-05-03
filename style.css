@@ -14,18 +14,16 @@ body{
 	padding: 25px;
 	font-weight: bold;
 	order: 0;
-	background-color: grey;
 }
 .mytabs .tab{
 	width: 100%;
 	padding: 20px;
 	order: 1;
-	background-color: white;
 	display: none;
 }
 .mytabs input[type="radio"]:checked + label + .tab{
 	display: block;
 }
 .mytabs input[type="radio"]:checked + label {
-	background-color: black;
+
 }
