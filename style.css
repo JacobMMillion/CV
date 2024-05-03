@@ -13,7 +13,7 @@ body{}
 	padding: 25px;
 	background: #e2e2e2;
 	font-weight: bold;
-	order: 2;
+	order: 0;
 }
 .mytabs .tab{
 	width: 100%;
