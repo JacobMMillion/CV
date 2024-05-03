@@ -1,27 +1,26 @@
-body{
+body {
 }
-.mytabs{
+.mytabs {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 600px;
 	margin: 50px auto;
 	padding: 25px;
 }
-.mytabs input[type="radio"]{
+.mytabs input[type="radio"] {
 	display: none;
 }
-.mytabs label{
+.mytabs label {
 	padding: 25px;
 	font-weight: bold;
-	order: 0;
 }
-.mytabs .tab{
+.mytabs .tab {
 	width: 100%;
 	padding: 20px;
 	order: 1;
 	display: none;
 }
-.mytabs input[type="radio"]:checked + label + .tab{
+.mytabs input[type="radio"]:checked + label + .tab {
 	display: block;
 }
 .mytabs input[type="radio"]:checked + label {
