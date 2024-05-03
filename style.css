@@ -3,7 +3,7 @@ body {
 .mytabs {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 990px;
+	max-width: 2000px;
 	margin: 50px auto;
 	padding: 25px;
 }
