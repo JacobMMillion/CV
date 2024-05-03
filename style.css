@@ -1,0 +1,6 @@
+body{}
+.mytabs{
+	display: flex;
+	flex-wrap: wrap;
+
+}
