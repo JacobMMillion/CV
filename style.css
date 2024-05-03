@@ -1,10 +1,10 @@
 body {
-	background-color: #F5F5F5;
+	background-color: #f5f5f5;
 }
 .mytabs {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 2000px;
+	max-width: 1500px;
 	margin: 50px auto;
 	padding: 25px;
 }
@@ -14,7 +14,7 @@ body {
 .mytabs label {
 	padding: 25px;
 	font-weight: bold;
-	background-color: #e2e2e2;
+	background-color: #ccc;
 }
 .mytabs .tab {
 	width: 100%;
