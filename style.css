@@ -29,3 +29,19 @@ body {
 .mytabs input[type="radio"]:checked + label {
 	background-color: #fff;
 }
+
+/* Project stuff */
+.project-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-style: normal; /* Ensure the parent is not overriding the child */
+}
+
+.project-type {
+    font-style: italic;
+}
+
+.project-description {
+    margin-bottom: 20px;
+}
