@@ -1,13 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>MillionPhotography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
 
-  </head>
+        h1 {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #444;
+        }
 
-  <body>
-    <h1><em>My Photography</em></h1>
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin: 20px;
+            padding: 0;
+        }
 
-  </body>
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            width: 80%;
+            max-width: 600px;
+        }
 
-  </html>
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item .title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 10px;
+            font-size: 1.2em;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+
+        .gallery-item:hover .title {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <h1><em>Million Gallery</em></h1>
+    <div class="gallery">
+        <a href="nature.html" class="gallery-item">
+            <img src="Photography_Images/nature.jpg" alt="Nature">
+            <div class="title">Nature</div>
+        </a>
+        <a href="social-justice.html" class="gallery-item">
+            <img src="Photography_Images/social-justice.jpg" alt="Social Justice">
+            <div class="title">Social Justice</div>
+        </a>
+        <a href="digital-edits.html" class="gallery-item">
+            <img src="Photography_Images/digital-edits.jpg" alt="Digital Edits">
+            <div class="title">Digital Edits and Other</div>
+        </a>
+    </div>
+</body>
+</html>

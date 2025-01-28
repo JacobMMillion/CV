@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Adds space between images */
+            padding: 20px;
+        }
+
+        #gallery img {
+            max-width: 100%; /* Ensures responsiveness */
+            height: auto; /* Maintains aspect ratio */
+            max-height: 300px; /* Limits excessive height */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Social Justice</h1>
+    <div id="gallery"></div>
+
+    <script>
+        const folder = "Photography_Images/Society";
+        const images = ["2018WhereIsTheLove.jpg", "2018HoldTight.jpg", "matter.jpg", "capitalhill.jpg", "not_a_threat.jpg", "walk.jpg", "signage.jpg", "many_police.jpg", "gates.jpg", "correction.jpg", "cleared.jpg", "shield.jpg", "suiting_up.jpg", "littleguy.jpg", "prof.jpg", "move.jpg", "alma.jpg"];
+
+        const gallery = document.getElementById("gallery");
+        images.forEach(img => {
+            const imgElement = document.createElement("img");
+            imgElement.src = `${folder}/${img}`;
+            imgElement.alt = img;
+            gallery.appendChild(imgElement);
+        });
+    </script>
+
+</body>
+
+</html>

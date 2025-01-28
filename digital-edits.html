@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Adds space between images */
+            padding: 20px;
+        }
+
+        #gallery img {
+            max-width: 100%; /* Ensures responsiveness */
+            height: auto; /* Maintains aspect ratio */
+            max-height: 300px; /* Limits excessive height */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Digital Edits and Other</h1>
+    <div id="gallery"></div>
+
+    <script>
+        const folder = "Photography_Images/DigitalEdits_Other";
+        const images = ["covid_curtain.jpg", "ian.jpg", "lamp.jpg", "andy.jpg", "explosion.jpg", "covid_house.jpg", "timessquare.jpg", "pupin.jpg", "kaila.jpg", "car.jpg", "theology.jpg", "butler.jpg", "train.jpg", "chrishawn.jpg", "2018gavin.jpg", "candle.jpg", "lightbulb.jpg", "pour.jpg", "stars.jpg"];
+
+        const gallery = document.getElementById("gallery");
+        images.forEach(img => {
+            const imgElement = document.createElement("img");
+            imgElement.src = `${folder}/${img}`;
+            imgElement.alt = img;
+            gallery.appendChild(imgElement);
+        });
+    </script>
+
+</body>
+
+</html>
