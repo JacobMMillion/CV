@@ -1,119 +1,84 @@
+Here is the updated and more concise HTML code, which includes a link to the GitHub repository and the tech stack information from the repository:
+
+```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Menuly</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      a:hover {
-        color: red;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-
-      .center {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-      }
-
-      p {
-        color: rgb(0, 0, 0);
-      }
-      h4 {
-        margin: 2;
-        padding: 0;
-        color: rgb(0, 0, 0);
-      }
-      h3 {
-        color: rgb(0, 0, 0);
-      }
-
-      body {
-        margin: 10px;
-      }
-      /* images */
-      figure {
-        text-align: center;
-        margin: 10px;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-        border: 15px solid #ddd;
-        border-radius: 4px;
-        margin-bottom: 5px;
-        max-height: 450px;
-      }
-
-      figcaption {
-        font-style: italic;
-        font-size: 14px;
-        color: #555;
-      }
-    </style>
-  </head>
-
-  <body style="background-color: #ffffff">
-    <h3>Menuly: IOS application</h3>
-    <p>
-      Developed by Jacob Million<br />
-      <br />
-      <em
-        >I created Menuly to help minimize an issue I noticed
-        during my time working in the service industry: unorganization. Most of
-        the time, menu descriptions are stored on something such as a google
-        document which can lead to servers saving an outdated file or minor changes not being reflected on the document for long periods of time. The goal of Menuly is to allow managers to easily make changes to
-        the menu descriptions, and to allow servers an easy interfance to
-        referance and study.
-     
-   </em>
-<br />
-<br />
-
-<em>Menuly works with a Firebase backend, both for the database to store the menu descriptions and to handle login information. Every restaurant account is given a restaurant code, which non-admin accounts can sync with in order to get a live view of the menu. Users can update their code if they have multiple restaurant associations.</em>
-      
-      <br />
-      <br />
-    </p>
-
-    <!-- Image 1 -->
-    <figure>
-      <img src="Images/login.png" alt="Image 1" />
-      <figcaption>Login Screen</figcaption>
-      <br />
-    </figure>
-
-    <!-- Image 2 -->
-    <figure>
-      <img src="Images/menu_page.png" alt="Image 2" />
-      <figcaption>Menu View</figcaption>
-      <br />
-    </figure>
-
-    <!-- Image 2 -->
-    <figure>
-      <img src="Images/add_item_page.png" alt="Image 2" />
-      <figcaption>Admin Add Item Page</figcaption>
-      <br />
-    </figure>
-
-    <!-- Image 6 -->
-    <figure>
-      <img src="Images/profile.png" alt="Image 6" />
-      <figcaption>Profile Page</figcaption>
-      <br />
-    </figure>
-
-    <!-- Image 7 -->
-    <figure>
-      <img src="Images/register_account.png" alt="Image 7" />
-      <figcaption>Register Account Page</figcaption>
-      <br />
-    </figure>
-
-    <p>
-    </p>
-  </body>
+<head>
+  <title>Menuly</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 15px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 5px;
+      max-height: 450px;
+    }
+    figure {
+      text-align: center;
+      margin: 10px;
+    }
+    figcaption {
+      font-style: italic;
+      font-size: 14px;
+      color: #555;
+    }
+    body {
+      margin: 10px;
+      background-color: #ffffff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <h3>Menuly: iOS Application</h3>
+  <p>
+    Developed by Jacob Million<br /><br />
+    <em>
+      I developed Menuly to tackle the disorganization I observed in the service industry regarding menu management. Menu descriptions are often stored in platforms like Google Docs, leading to servers accessing outdated files or missing minor updates for extended periods. Menuly streamlines this by allowing managers to easily update menu descriptions and providing servers with an intuitive interface to reference and study them.
+    </em>
+  </p>
+  <p>
+    <em>
+      Menuly works with a Firebase backend, both for the database to store the menu descriptions and to handle login information. Every restaurant account is given a restaurant code, which non-admin accounts can sync with in order to get a live view of the menu. Users can update their code if they have multiple restaurant associations.
+    </em>
+  </p>
+  <p>
+    <strong>Tech Stack:</strong><br />
+    • Swift (UIKit)<br />
+    • Firebase Authentication & Firestore<br />
+    • Swift Package Manager<br />
+  </p>
+  <p>
+    <a href="https://github.com/JacobMMillion/Menu-ly_IOS_Application">GitHub Repository</a>
+  </p>
+  
+  <!-- Images -->
+  <figure>
+    <img src="Images/login.png" alt="Login Screen" />
+    <figcaption>Login Screen</figcaption>
+  </figure>
+  <figure>
+    <img src="Images/menu_page.png" alt="Menu View" />
+    <figcaption>Menu View</figcaption>
+  </figure>
+  <figure>
+    <img src="Images/add_item_page.png" alt="Admin Add Item Page" />
+    <figcaption>Admin Add Item Page</figcaption>
+  </figure>
+  <figure>
+    <img src="Images/profile.png" alt="Profile Page" />
+    <figcaption>Profile Page</figcaption>
+  </figure>
+  <figure>
+    <img src="Images/register_account.png" alt="Register Account Page" />
+    <figcaption>Register Account Page</figcaption>
+  </figure>
+</body>
 </html>
