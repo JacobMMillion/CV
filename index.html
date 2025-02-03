@@ -3,8 +3,13 @@
     <head>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet" crossorigin="anonymous">
+
+        <!-- Fontawesome for social media icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
         <style>
 
@@ -14,6 +19,7 @@
 
             .title_header {
                 margin-top:25px;
+                margin-bottom: 25px;
                 font-size: 25px;
 
                 display: flex;
@@ -21,10 +27,24 @@
                 justify-content: flex-start; /* Align to the left */
             }
 
-            .header {
+            .directory {
                 font-size: 15;
                 margin-top: 40px;
+                margin-bottom: 25px;
+            }
 
+            .btn-outline-secondary {
+                background-color: #7c9885;
+                color: white;
+                border: black;
+                transition: all 0.3s ease;
+            }
+
+            .btn-outline-secondary:hover {
+                background-color: #033f63;
+                opacity: 0.8;
+                color: white;
+                transform: scale(1.1);
             }
 
             .middle_box {
@@ -63,13 +83,14 @@
                 background-color: grey;
             }
 
-            .grey-half {
+            .blue-half {
                 position: absolute;
                 left: 0;
                 top: 0;
                 width: 50%;  /* This makes it extend halfway */
                 height: 100%;
-                background-color: rgb(165, 165, 165);
+                background-color: #033f63;
+                opacity: 0.8;
                 z-index: -1;  /* This puts it behind the content */
             }
 
@@ -92,6 +113,11 @@
                 border: 2px solid black;
             }
 
+            .custom_button:hover {
+                color: rgb(154, 154, 154);
+                transform: scale(1.1);
+            }
+
             .hello_txt {
                 margin-top: 40;
                 font-size: 30;
@@ -102,6 +128,23 @@
             .button_txt {
                 font-size: 20;
                 font-weight: 600;
+            }
+
+            .social_icons {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-bottom: 20px;
+            }
+
+            .social_icons a {
+                color: rgb(34, 34, 34);
+                transition: all 0.3s ease;
+            }
+
+            .social_icons a:hover {
+                color: rgb(154, 154, 154);
+                transform: scale(1.1);
             }
 
 
@@ -129,29 +172,31 @@
 
                 </div>
 
+                <!-- Spacer -->
                 <div class="col-md-3">
                 </div>
 
+                <!-- Directory options -->
                 <div class="col-3 col-md-1 text-center">
-                    <div class="header">
+                    <div class="directory">
                         <a href="index.html" class="btn btn-outline-secondary">Home</a>
                     </div>
                 </div>
 
                 <div class="col-3 col-md-1 text-center">
-                    <div class="header">
+                    <div class="directory">
                         <a href="resume.html" class="btn btn-outline-secondary">Resume</a>
                     </div>
                 </div>
 
                 <div class="col-3 col-md-1 text-center">
-                    <div class="header">
+                    <div class="directory">
                         <a href="aboutme.html" class="btn btn-outline-secondary">About Me</a>
                     </div>
                 </div>
 
                 <div class="col-3 col-md-1 text-center">
-                    <div class="header">
+                    <div class="directory">
                         <a href="contact.html" class="btn btn-outline-secondary">Contact</a>
                     </div>
                 </div>
@@ -169,7 +214,7 @@
             <!-- Row 2, main content  -->
             <div class="row big position-relative">
 
-                <div class="grey-half"> </div> <!-- For background -->
+                <div class="blue-half"> </div> <!-- For background -->
 
                 <!-- This column does not render on xsmall devices! -->
                 <div class="col-md-4 d-none d-md-block">
@@ -193,10 +238,31 @@
                                 Software Engineer
                             </div>
     
-                       </div>
+                        </div>
 
                     </div>
 
+                    <!-- Social icons row outside middle_box -->
+                    <div class="row mt-3">
+                        <div class="social_icons text-ceter">
+                            <a href="https://github.com/JacobMMillion" target="_blank">
+                                <i class="fab fa-github fa-2x"></i>
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/in/jacob-million-05ab0b221" target="_blank">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                            
+                            <a href="https://instagram.com/million.jacob" target="_blank">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                            
+                            <a href="mailto:jm5530@columbia.edu">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </a>
+                        </div>
+            </div>
+                
                 </div>
 
                 <div class="col-md-4">
