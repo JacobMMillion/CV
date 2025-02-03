@@ -63,16 +63,6 @@
                 background-color: grey;
             }
 
-            .grey-half {
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 50%;  /* This makes it extend halfway */
-                height: 100%;
-                background-color: rgb(165, 165, 165);
-                z-index: -1;  /* This puts it behind the content */
-            }
-
             .big {
                 min-height: 100vh; /* Fill the screen */
             }
@@ -110,7 +100,7 @@
     </head>
 
 
-    <body>
+    </body>
 
         <div class="container-fluid">
 
@@ -167,81 +157,12 @@
             </div>
 
             <!-- Row 2, main content  -->
-            <div class="row big position-relative">
-
-                <div class="grey-half"> </div> <!-- For background -->
-
-                <!-- This column does not render on xsmall devices! -->
-                <div class="col-md-4 d-none d-md-block">
-                </div>
-
-                <div class="col-md-4 col-12">
-
-                    <div class="middle_box">
-
-                        <div class="row">
-                            <img src="Images/profile_zoom.jpg" class="profile_pic"/>
-                        </div>
-         
-                       <div class="row">
-                            
-                            <div class="name_txt text-center">
-                                Jacob Million
-                            </div>
-    
-                            <div class="title_txt text-center">
-                                Software Engineer
-                            </div>
-    
-                       </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-4">
-                    
-                    <div class="info_box">
-                        
-                        <div class="hello_txt">
-                            HELLO
-                        </div>
-
-                        <div class="summary_text_big">
-                            Here's who I am and what I do
-                        </div>
-
-                        <br>
-
-                        <a href="resume.html" class="btn custom_button name_txt">Resume</a>
-
-                        <br>
-
-                        <a href="aboutme.html" class="btn custom_button name_txt">About Me</a>
-                        
-                        <br>
-                        <br>
-
-                        <div class="summary_text_normal">
-                            I am passionate about leveraging technology and thoughtful problem-solving to address intricate challenges.
-                        </div>
-
-                        <br>
-
-
-                    </div>
-
-                </div>
-
+            <div class="row big">
+                This will be about me...
             </div>
-
-
-
-
-
-
+        
+        
         </div>
 
     </body>
-
 </html>

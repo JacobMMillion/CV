@@ -2,9 +2,15 @@
 <html>
   <head>
     <title>JacobMillionCV</title>
+
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet" crossorigin="anonymous">
+
     <style>
 
       .center {
@@ -25,13 +31,147 @@
         color: rgb(0, 0, 0);
       }
 
-      body {
-        margin: 10px;
-      }
+
+	  /* Copied */
+	body {
+        font-family: Georgia, serif;
+     }
+
+	.title_header {
+		margin-top:25px;
+		font-size: 30px; /* MANUALLY INCREASED FROM 25 */
+
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-start; /* Align to the left */
+	}
+
+	.header {
+		font-size: 15;
+		margin-top: 40px;
+
+	}
+
+	.middle_box {
+		margin-top: 40;
+		outline: 1.5px solid #000; /* 2px black solid outline */
+		border-radius: 10px;
+		background-color: white;
+	}
+
+	.info_box {
+		margin-top: 40;
+	}
+
+	.profile_pic {
+		width: 250px;
+		height: auto;
+		object-fit: cover; /* Ensures the image fills the container without distorting */
+		border-radius: 50%;
+		display: block; /* Removes inline block formatting */
+		margin: 0 auto; /* Centers the image horizontally */
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.name_txt {
+		font-size: 30;
+		font-weight: 600;
+	}
+
+	.title_txt {
+		padding-bottom: 30px;
+		font-size: 15;
+	}
+
+	.grey {
+		background-color: grey;
+	}
+
+	.big {
+		min-height: 100vh; /* Fill the screen */
+	}
+
+	.summary_text_big {
+		font-size: 25;
+	}
+
+	.summary_text_normal {
+		font-size: 20;
+	}
+
+	.custom_button {
+		margin-top: 20;
+		margin-bottom: 20;
+		padding: 30px;
+		border: 2px solid black;
+	}
+
+	.hello_txt {
+		margin-top: 40;
+		font-size: 30;
+		font-weight: 600;
+		font-style: italic;
+	}
+
+	.button_txt {
+		font-size: 20;
+		font-weight: 600;
+	}
+
+
     </style>
   </head>
 
   <body>
+
+	<div class="container-fluid">
+
+			<!-- ROW 1, Name title and subcategories -->
+	<div class="row">
+
+		<div class="col-12 col-md-5 text-center">
+
+			<div class="title_header">
+
+				<div class="name_txt">
+					Jacob Million | <span style="color: rgb(100, 100, 100);">Software Engineer</span>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="col-md-3">
+		</div>
+
+		<div class="col-3 col-md-1 text-center">
+			<div class="header">
+				<a href="index.html" class="btn btn-outline-secondary">Home</a>
+			</div>
+		</div>
+
+		<div class="col-3 col-md-1 text-center">
+			<div class="header">
+				<a href="resume.html" class="btn btn-outline-secondary">Resume</a>
+			</div>
+		</div>
+
+		<div class="col-3 col-md-1 text-center">
+			<div class="header">
+				<a href="aboutme.html" class="btn btn-outline-secondary">About Me</a>
+			</div>
+		</div>
+
+		<div class="col-3 col-md-1 text-center">
+			<div class="header">
+				<a href="contact.html" class="btn btn-outline-secondary">Contact</a>
+			</div>
+		</div>
+
+	</div>
+
+	</div>
 
     <div class="mytabs">
 
@@ -44,7 +184,6 @@
 			width="200"
 			style="float: right; margin-right: 10px; margin-top: 10px; margin-left; 50px; border-left: 20px;"
 		/>
-		<h1><em>Jacob M. Million</em></h1>
 		<b><em>
 			jacobmmillion at gmail.com<br>
 			<a href="https://github.com/JacobMMillion">Github</a>
