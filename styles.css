@@ -79,6 +79,25 @@ body {
     z-index: -1;  /* This puts it behind the content */
 }
 
+.blue {
+    background-color: #033f63;
+    opacity: 0.8;
+}
+
+.contact_txt {
+    margin-top:25px;
+    margin-bottom: 25px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start; /* Align to the left */
+
+    font-size: 30;
+    font-weight: 600;
+    font-style: italic;
+    color: white;
+}
+
 .big {
     min-height: 100vh; /* Fill the screen */
 }
