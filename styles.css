@@ -23,6 +23,9 @@ body {
     color: white;
     border: black;
     transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15;
 }
 
 .btn-outline-secondary:hover {
@@ -33,10 +36,11 @@ body {
 }
 
 .middle_box {
-    margin-top: 40;
+    margin-top: 40px;
     outline: 1.5px solid #000; /* 2px black solid outline */
     border-radius: 10px;
     background-color: white;
+    height: 580px;
 }
 
 .info_box {
@@ -105,6 +109,10 @@ body {
 
 .summary_text_normal {
     font-size: 20;
+}
+
+.summary_text_small {
+    font-size: 16;
 }
 
 .custom_button {
