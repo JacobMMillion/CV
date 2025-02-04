@@ -115,6 +115,12 @@ body {
     font-size: 16;
 }
 
+.interest_text {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
 .custom_button {
     margin-top: 20;
     margin-bottom: 20;
