@@ -44,38 +44,38 @@
 </head>
 <body>
 
-  <!-- HEADER ROW -->
-  <header class="container-fluid py-3">
-    <div class="row align-items-center gy-3 gy-md-0">
-  
-      <!-- Name & Title -->
-      <div class="col-12 col-md-5 text-center">
-        <div class="title_header">
-          <div class="name_txt">
-            Jacob Million | <span class="text-secondary">Software Engineer</span>
-          </div>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <!-- Name/Title Left -->
+      <a class="navbar-brand fw-bold" href="#" style="font-size: 2rem;">
+        Jacob Million <span style="color: rgb(100, 100, 100); font-weight: 400;">| Software Engineer</span>
+      </a>
+      <!-- Hamburger/collapse button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Nav links right/collapsed -->
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item mb-2">
+            <a class="nav-link btn btn-outline-secondary mx-1" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link btn btn-outline-secondary mx-1" href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link btn btn-outline-secondary mx-1" href="aboutme.html">About</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link btn btn-outline-secondary mx-1" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link btn btn-outline-secondary mx-1" href="tutoring.html">Tutoring</a>
+          </li>
+        </ul>
       </div>
-  
-      <!-- spacer on md+ -->
-      <div class="d-none d-md-block col-md-3"></div>
-  
-      <!-- Navigation Buttons -->
-      <div class="col-3 col-md-1 text-center">
-        <a href="index.html"  class="btn btn-outline-secondary">Home</a>
-      </div>
-      <div class="col-3 col-md-1 text-center">
-        <a href="resume.html" class="btn btn-outline-secondary">Resume</a>
-      </div>
-      <div class="col-3 col-md-1 text-center">
-        <a href="aboutme.html" class="btn btn-outline-secondary">About</a>
-      </div>
-      <div class="col-3 col-md-1 text-center">
-        <a href="contact.html" class="btn btn-outline-secondary">Contact</a>
-      </div>
-  
     </div>
-  </header>  
+  </nav>
 
   <!-- HERO -->
   <section class="hero text-center py-5">
@@ -140,7 +140,7 @@
         </div>
         <div class="col-md-4">
           <div class="testimonial-card p-3 h-100">
-            <p>"He encouraged my daughter’s ideas, and taught above and beyond the curriculum."</p>
+            <p>"He encouraged my daughter's ideas, and taught above and beyond the curriculum."</p>
             <cite>—Jessica M.</cite>
           </div>
         </div>

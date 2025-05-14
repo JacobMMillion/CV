@@ -23,62 +23,40 @@
 
     <body>
 
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <div class="container-fluid">
+            <!-- Name/Title Left -->
+            <a class="navbar-brand fw-bold" href="#" style="font-size: 2rem;">
+              Jacob Million <span style="color: rgb(100, 100, 100); font-weight: 400;">| Software Engineer</span>
+            </a>
+            <!-- Hamburger/collapse button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Nav links right/collapsed -->
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link btn btn-outline-secondary mx-1" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-outline-secondary mx-1" href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-outline-secondary mx-1" href="aboutme.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-outline-secondary mx-1" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-outline-secondary mx-1" href="tutoring.html">Tutoring</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
         <div class="container-fluid">
-
-            <!-- ROW 1, Name title and subcategories -->
-            <div class="row">
-
-                <div class="col-12 col-md-5 text-center">
-
-                    <div class="title_header">
-
-                        <div class="name_txt">
-                            Jacob Million | <span style="color: rgb(100, 100, 100);">Software Engineer</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Spacer -->
-                <div class="col-md-3">
-                </div>
-
-                <!-- Directory options -->
-                <div class="col-3 col-md-1 text-center">
-                    <div class="directory">
-                        <a href="index.html" class="btn btn-outline-secondary">Home</a>
-                    </div>
-                </div>
-
-                <div class="col-3 col-md-1 text-center">
-                    <div class="directory">
-                        <a href="resume.html" class="btn btn-outline-secondary">Resume</a>
-                    </div>
-                </div>
-
-                <div class="col-3 col-md-1 text-center">
-                    <div class="directory">
-                        <a href="aboutme.html" class="btn btn-outline-secondary">About</a>
-                    </div>
-                </div>
-
-                <div class="col-3 col-md-1 text-center">
-                    <div class="directory">
-                        <a href="contact.html" class="btn btn-outline-secondary">Contact</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Row for whitespace -->
-            <div class="row">
-
-                <div class="header">
-                </div>
-
-            </div>
-
             <!-- Row 2, main content  -->
             <div class="row big position-relative">
 
@@ -176,6 +154,10 @@
 
         </div>
 
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+                crossorigin="anonymous"></script>
     </body>
 
 </html>

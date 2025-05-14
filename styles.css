@@ -164,3 +164,23 @@ body {
     color: rgb(154, 154, 154);
     transform: scale(1.1);
 }
+
+@media (max-width: 991.98px) {
+  #mainNavbar .navbar-nav {
+    width: 100%;
+    align-items: center;
+  }
+  #mainNavbar .nav-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #mainNavbar .nav-link {
+    width: 90%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
